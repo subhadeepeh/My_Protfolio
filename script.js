@@ -27,19 +27,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Enhanced navbar on scroll with smooth transitions
+// Simple navbar on scroll
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     const scrolled = window.scrollY;
     
     if (scrolled > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1)';
-        navbar.style.borderBottom = '1px solid rgba(37, 99, 235, 0.1)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+        navbar.style.boxShadow = '0 8px 30px rgba(0, 0, 0, 0.4)';
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.8)';
-        navbar.style.boxShadow = 'none';
-        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.2)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.9)';
+        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
     }
 });
 
